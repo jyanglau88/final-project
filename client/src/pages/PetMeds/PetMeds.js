@@ -59,7 +59,7 @@ class PetMeds extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>The Purrfect Pet Prescription Planner. Prepared to Please all Pets from Plump Pigs to Picky Parrots. - Pill♥Pals </h1>
+              <h1>The Purrfect Pet Prescription Planner. Prepared to Please all Pets from Plump Pigs to Picky Parrots. - PillPals </h1>
             </Jumbotron>
             <form>
               <Input
@@ -90,7 +90,7 @@ class PetMeds extends Component {
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>My Pet's Medication List 💊</h1>
+              <h1>My Pet's Medication List</h1>
             </Jumbotron>
             {this.state.petmeds.length ? (
               <List>
@@ -115,4 +115,4 @@ class PetMeds extends Component {
   }
 }
 
-expor
+export default PetMeds;
