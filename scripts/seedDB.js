@@ -12,6 +12,7 @@ const petSeed = [
   {
     prescription: "Fluoxetine 10mg",
     sig: "Give 1 capsule by mouth every day",
+    petname: "Fluffy",
     prescriber: "Dr. Pet Vet",
     date: 01/01/2018
   }

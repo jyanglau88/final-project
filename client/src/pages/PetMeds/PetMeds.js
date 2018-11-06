@@ -11,7 +11,9 @@ class PetMeds extends Component {
   state = {
     petmeds: [],
     prescription: "",
-    sig: ""
+    sig: "",
+    petname: "",
+    prescriber: ""
   };
 
   componentDidMount() {
@@ -72,6 +74,12 @@ class PetMeds extends Component {
                 onChange={this.handleInputChange}
                 name="sig"
                 placeholder="Directions (required)"
+              />
+              <TextArea
+                value={this.state.petname}
+                onChange={this.handleInputChange}
+                name="petname"
+                placeholder="Pet's Name (Optional)"
               />
               <TextArea
                 value={this.state.prescriber}
