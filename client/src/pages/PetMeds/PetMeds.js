@@ -55,11 +55,17 @@ class PetMeds extends Component {
   render() {
     return (
       <Container fluid>
-        <Row>
-          <Col size="md-6">
-            <Jumbotron>
+      <Row>
+      <Jumbotron>
               <h1>The Purrfect Pet Prescription Planner. Prepared to Please all Pets from Plump Pigs to Picky Parrots. - PillPals </h1>
             </Jumbotron>
+      </Row>
+
+        <Row>
+          <Col size="md-3">
+<Jumbotron>
+  Add a Prescription:
+</Jumbotron>
             <form>
               <Input
                 value={this.state.prescription}
@@ -87,7 +93,7 @@ class PetMeds extends Component {
               </FormBtn>
             </form>
           </Col>
-          <Col size="md-6 sm-12">
+          <Col size="md-9 sm-12">
             <Jumbotron>
               <h1>My Pet's Medication List</h1>
             </Jumbotron>
