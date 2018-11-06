@@ -67,13 +67,13 @@ class PetMeds extends Component {
                 value={this.state.prescription}
                 onChange={this.handleInputChange}
                 name="prescription"
-                placeholder="Drug Name and Strength (required)"
+                placeholder="Drug Name and Strength (Required)"
               />
               <Input
                 value={this.state.sig}
                 onChange={this.handleInputChange}
                 name="sig"
-                placeholder="Directions (required)"
+                placeholder="Directions (Required)"
               />
               <TextArea
                 value={this.state.petname}
@@ -86,6 +86,12 @@ class PetMeds extends Component {
                 onChange={this.handleInputChange}
                 name="prescriber"
                 placeholder="Prescriber (Optional)"
+              />
+              <Input
+                value={this.state.date}
+                onChange={this.handleInputChange}
+                name="date"
+                placeholder="Date (Optional)"
               />
               <FormBtn
                 disabled={!(this.state.sig && this.state.prescription)}
