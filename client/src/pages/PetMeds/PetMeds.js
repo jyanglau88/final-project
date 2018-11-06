@@ -9,10 +9,9 @@ import { Input, TextArea, FormBtn } from "../../components/Form";
 
 class PetMeds extends Component {
   state = {
-    PetMeds: [],
+    petmeds: [],
     prescription: "",
-    sig: "",
-    prescriber: ""
+    sig: ""
   };
 
   componentDidMount() {
@@ -98,7 +97,7 @@ class PetMeds extends Component {
                   <ListItem key={petmed._id}>
                     <Link to={"/petmeds/" + petmed._id}>
                       <strong>
-                        {petmed.prescription} by {petmed.sig}
+                        {petmed.prescription}:{petmed.sig}
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => this.deletePetMed(petmed._id)} />
