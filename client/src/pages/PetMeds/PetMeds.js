@@ -23,7 +23,7 @@ class PetMeds extends Component {
   loadPetMeds = () => {
     API.getPetMeds()
       .then(res =>
-        this.setState({ petmeds: res.data, prescription: "", sig: "", prescriber: "" })
+        this.setState({ petmeds: res.data, prescription: "", sig: "", petname: "", prescriber: "" })
       )
       .catch(err => console.log(err));
   };
@@ -47,6 +47,7 @@ class PetMeds extends Component {
       API.savePetMed({
         prescription: this.state.prescription,
         sig: this.state.sig,
+        petname: this.state.petname,
         prescriber: this.state.prescriber
       })
         .then(res => this.loadPetMeds())
