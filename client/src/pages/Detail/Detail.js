@@ -33,11 +33,11 @@ class Detail extends Component {
             <article>
               <h1>Pet's Name</h1>
               <p>
-                {this.state.book.petname}
+                {this.state.petmed.petname}
               </p>
               <h1>Prescriber</h1>
               <p>
-                {this.state.book.prescriber}
+                {this.state.petmed.prescriber}
               </p>
             </article>
           </Col>
