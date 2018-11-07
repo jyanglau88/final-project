@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const petSchema = new Schema({
+const petMedsSchema = new Schema({
   prescription: { type: String, required: true },
   sig: { type: String, required: true },
   petname: { type: String },
@@ -10,6 +10,6 @@ const petSchema = new Schema({
 
 });
 
-const PetMed = mongoose.model("PetMed", petSchema);
+const PetMeds = mongoose.model("PetMeds", petMedsSchema);
 
-module.exports = PetMed;
+module.exports = PetMeds;

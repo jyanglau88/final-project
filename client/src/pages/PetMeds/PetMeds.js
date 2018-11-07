@@ -29,8 +29,8 @@ class PetMeds extends Component {
   };
 
   deletePetMed = id => {
-    API.deletePetMed(id)
-      .then(res => this.loadPetMeds())
+     API.deletePetMed(id)
+       .then(res => this.loadPetMeds())
       .catch(err => console.log(err));
   };
 
@@ -50,7 +50,10 @@ class PetMeds extends Component {
         petname: this.state.petname,
         prescriber: this.state.prescriber
       })
-        .then(res => this.loadPetMeds())
+        .then(res => {
+          //console.log(res);
+          this.loadPetMeds();
+        })
         .catch(err => console.log(err));
     }
   };

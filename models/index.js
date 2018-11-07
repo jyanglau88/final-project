@@ -1,3 +1,3 @@
 module.exports = {
-  PetMed: require("./petmed")
+  PetMeds: require("./petmeds")
 };
