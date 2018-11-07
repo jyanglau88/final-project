@@ -29,8 +29,8 @@ class PetMeds extends Component {
   };
 
   deletePetMed = id => {
-     API.deletePetMed(id)
-       .then(res => this.loadPetMeds())
+    API.deletePetMed(id)
+      .then(res => this.loadPetMeds())
       .catch(err => console.log(err));
   };
 
@@ -115,7 +115,7 @@ class PetMeds extends Component {
                   <ListItem key={petmed._id}>
                     <Link to={"/petmeds/" + petmed._id}>
                       <strong>
-                        {petmed.prescription}:{petmed.sig}
+                        {petmed.prescription} Directions: {petmed.sig}
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => this.deletePetMed(petmed._id)} />
@@ -123,7 +123,7 @@ class PetMeds extends Component {
                 ))}
               </List>
             ) : (
-                <h3>No Results to Display</h3>
+                <h3>Welcome! Please add your pet's medication info to the left.</h3>
               )}
           </Col>
         </Row>
