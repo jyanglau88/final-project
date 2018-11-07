@@ -23,7 +23,7 @@ class Detail extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {this.state.petmed.prescription}: {this.state.petmed.sig}
+              {this.state.petmed.petname}
               </h1>
             </Jumbotron>
           </Col>
@@ -31,14 +31,18 @@ class Detail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Pet's Name</h1>
-              <p>
-                {this.state.petmed.petname}
-              </p>
-              <h1>Prescriber</h1>
-              <p>
-                {this.state.petmed.prescriber}
-              </p>
+            <h3>Medication:</h3>
+              <h5>
+              {this.state.petmed.prescription}
+              </h5>
+            <h3>Directions:</h3>
+              <h5>
+              {this.state.petmed.sig}
+              </h5>
+            <h3>Prescriber</h3>
+              <h5>
+              {this.state.petmed.prescriber}
+              </h5>
             </article>
           </Col>
         </Row>
