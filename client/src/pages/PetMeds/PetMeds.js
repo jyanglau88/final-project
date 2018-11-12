@@ -64,7 +64,7 @@ class PetMeds extends Component {
         <Row>
           <Col size="md-3">
             <Jumbotron>
-              Add a Prescription:
+              <h1>Pet Rx Info:</h1>
             </Jumbotron>
             <form>
               <Input
@@ -101,7 +101,7 @@ class PetMeds extends Component {
                 disabled={!(this.state.sig && this.state.prescription)}
                 onClick={this.handleFormSubmit}
               >
-                Add New Prescription
+                Submit
               </FormBtn>
             </form>
           </Col>
