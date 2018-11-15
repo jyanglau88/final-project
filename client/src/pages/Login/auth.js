@@ -43,14 +43,14 @@ export default class Auth {
   }
 
   // removes user details from localStorage
-  logout = () => ({
+  logout = () => {
     // Clear access token and ID token from local storage
     localStorage.removeItem('access_token');
     localStorage.removeItem('id_token');
     localStorage.removeItem('expires_at');
     // navigate to the home route
     history.replace('/home');
-  })
+  }
 
   // checks if the user is authenticated
   isAuthenticated = () => {
