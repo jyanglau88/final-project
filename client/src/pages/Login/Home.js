@@ -21,17 +21,17 @@ class Home extends Component {
           <div className="#">
 
           <Nav />
+
+            <App />
             <h5>
-              Welcome!{' '}
-              <a className="btn btn-lg btn-outline-dark bounceIn"
+              {' '}
+              <a className="btn btn-lg btn-outline-dark float-right bounceIn mr-3"
                 style={{ cursor: 'pointer' }}
                 onClick={this.logout}
               >
                 Log Out🔒
               </a>
             </h5>
-
-            <App />
           </div>
         }
         {
