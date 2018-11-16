@@ -65,12 +65,11 @@ class Home extends Component {
               <br></br>
             </div>
 
+            {/* Images at bottom of login page */}
             <a className="fixed-bottom fx-btm">
             <p className="fam-pet-pic float-left bounceIn"></p>
             <p className="fam-pet-pic4 float-right bounceIn"></p>
             <p className="fam-pet-pic3 center bounceIn"></p>
-            
-            
             </a>
 
             </div>
