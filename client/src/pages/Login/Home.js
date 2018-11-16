@@ -36,11 +36,15 @@ class Home extends Component {
         }
         {
           !isAuthenticated() && (
+            <div className="#">
             <div className="jumbotron">
-              <h5>Welcome to Pill❤️Pals!</h5>
-              <h5>
+              <h1 className="display-4" >Welcome to Pill❤️Pals!</h1>
+              <br></br>
+              <h5 className="lead" >
                 Your🕵️ go to website👨‍💻 for tracking📜 your pet's🐩 prescriptions!💊{' '}
                 </h5>
+                <br></br>
+              <h5 className="lead" >To continue just click Log In📋 or Sign Up📝!</h5>
                 <div className="#">
                 <a className="btn btn-lg btn-outline-dark float-right bounceIn"
                   style={{ cursor: 'pointer' }}
@@ -58,8 +62,17 @@ class Home extends Component {
                 </a>
                 </div>
                 {' '}
+              <br></br>
+            </div>
 
-              <h5>Please click Log In📋 or Sign Up📝 to continue.</h5>
+            <a className="fixed-bottom fx-btm">
+            <p className="fam-pet-pic float-left bounceIn"></p>
+            <p className="fam-pet-pic4 float-right bounceIn"></p>
+            <p className="fam-pet-pic3 center bounceIn"></p>
+            
+            
+            </a>
+
             </div>
           )
         }

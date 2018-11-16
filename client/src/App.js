@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PetMeds from "./pages/PetMeds";
 import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
+import NoMatch from "./pages/NoMatch"; //404 Page
 // import Nav from "./components/Nav";
 
 const App = () => (
