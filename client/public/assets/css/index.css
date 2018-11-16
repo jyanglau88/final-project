@@ -9,28 +9,28 @@
 }
 
 .fam-pet-pic {
-    background-image: url("./images/Family-Pet-Home.jpg");
+    background-image: url("../images/Family-Pet-Home.jpg");
     width: 34%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .fam-pet-pic2 {
-    background-image: url("./images/Family-Pet-Home2.jpg");
+    background-image: url("../images/Family-Pet-Home2.jpg");
     width: 34%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .fam-pet-pic3 {
-    background-image: url("./images/Family-Pet-Home3.jpg");
+    background-image: url("../images/Family-Pet-Home3.jpg");
     width: 34%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .fam-pet-pic4 {
-    background-image: url("./images/Family-Pet-Home4.jpg");
+    background-image: url("../images/Family-Pet-Home4.jpg");
     width: 34%;
     height: 100%;
     background-size: cover;
